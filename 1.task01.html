@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<label>请输入北京今天空气质量: <input id="api-input" type="text"> </label>
+<button id="button">确定填写</button>
+<div>您输入的是：<span id="api-display">尚无录入</span></div>
+
+<script>
+	(function () {
+		var btn = document.getElementById('button');
+		btn.addEventListener('click',function () {
+			document.getElementById('api-display').innerText = document.getElementById('api-input').value;;
+		});
+	})();
+</script>
+</body>
+</html>
